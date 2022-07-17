@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ua">
+  @@include('html/head.html',{
+    "title":"Збір коштів для ЗСУ i ТерО"})
+<body>
+  <div class="site-container container">
+    @@include('html/header.html',{
+      "pre": "Волонтерська группа",
+      "name": "GROMADAH",
+      "whatwedo": "Ми займаємося ремонтом та підготовкою<br>автiвок для бійців ЗСУ та ТерО у Харкові.",
+    })
+    <main>
+      @@include('html/item_1.html',{
+        "title": "Тривае збiр на придбання автівки для наших воїнів.",
+        "info": "Попри потужну військову та гумонітарне допомогу західних братських країн та суцільного волонтерського руху в Україні, бійцям на самісінькому нулі необхідне додаткове забезпечення.",
+        "more": "Детальнiше",
+      })
+      @@include('html/item_2.html',{
+        "title": "Opel Frontera 2.4i 1998",
+        "amount": "Необхідна сума",
+        "sum": "130000 грн",
+      })
+      @@include('html/item_3.html',{
+        "needs": "Поточні потреби",
+        "previous": "Попередні збори",
+        "1": "Оптичний приціл – 65000 грн",
+        "2": "Рації – 12000 грн",
+        "3": "Anti-microbial boot socks 10 шт. – 4000 грн",
+      })
+      @@include('html/item_4.html',{
+        "pay": "Cпособи переказу коштів",
+        "privatbank": "Приватбанк",
+        "crypto": "Крипто",
+        "copy": "Копіювати",
+        "message": "Адреса скопійована",
+      })
+      @@include('html/item_5.html',{
+        "activity": "Наша дiяльнiсть",
+        "report": "Звіти",
+      })
+    </main>
+    @@include('html/footer.html',{
+      "email": "Пошта",
+      "telegram": "Телеграм",
+      "instagram": "Instagram",
+      "social": "Допоможіть збору розповсюдивши<br>інформацію в соцмережах",
+    })
+  </div>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v14.0" nonce="7TYLepVs"></script>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

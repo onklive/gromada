@@ -1,0 +1,80 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @media (max-width: (940px)) {
+    flex-direction: column;
+  }
+  .contact{
+    ul {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: (500px)) {
+        flex-direction: column;
+      }
+      li {
+        padding: 0;
+        margin-right: 88px;
+        @media (max-width: (1024px)) {
+          margin-right: 48px;
+          margin-bottom: 24px;
+        }
+        p {
+          font-size: 13px;
+          line-height: 16px;
+          margin: 0 0 4px 0;
+        }
+        a {
+          font-size: 16px;
+          font-weight: 700;
+          &:hover {
+            color: var(--color-hover);
+          }
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    @media (max-width: (500px)) {
+      flex-direction: column;
+    }
+    ul {
+      display: flex;
+      margin-right: 8px;
+      @media (max-width: (500px)) {
+        margin: 0;
+      }
+    }
+    li {
+      margin-right: 8px;
+    }
+    a {
+      width: 36px;
+      height: 36px;
+      display: block;
+    }
+    .facebook {
+      background-image: url(../img/facebook_default.svg);
+      &:hover {
+        background-image: url(../img/facebook_hover.svg);
+      }
+    }
+    .twitter {
+      background-image: url(../img/twitter_default.svg);
+      &:hover {
+        background-image: url(../img/twitter_hover.svg);
+      }
+    }
+    .telegram {
+      background-image: url(../img/telegram_default.svg);
+      &:hover {
+        background-image: url(../img/telegram_hover.svg);
+      }
+    }
+    p {
+      font-size: 13px;
+      line-height: 140%;
+    }
+  }
+}

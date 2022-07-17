@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{
+    "title":"Collection of funds for the Armed Forces of Ukraine and Territorial Defense."})
+<body>
+  <div class="site-container container">
+    @@include('html/header_en.html',{
+      "pre": "Volunteer group",
+      "name": "GROMADAH",
+      "whatwedo": "We repair and prepare cars for soldiers of the<br>Armed Forces of Ukraine and TerO in Kharkiv.",
+    })
+    <main>
+      @@include('html/item_1_en.html',{
+        "title": "The collection for the purchase of a car for our soldiers is ongoing.",
+        "info": "Despite the powerful military and humanitarian aid of the Western fraternal countries and the solid volunteer movement in Ukraine, the fighters at ground zero need additional support.",
+        "more": "Read more",
+      })
+      @@include('html/item_2.html',{
+        "title": "Opel Frontera 2.4i 1998",
+        "amount": "Required amount",
+        "sum": "$5000",
+      })
+      @@include('html/item_3.html',{
+        "needs": "Current needs",
+        "previous": "Previous fundraising",
+        "1": "Optical sight – $2220",
+        "2": "Walkie-talkies - $410",
+        "3": "Anti-microbial boot socks 10 шт. – $140",
+      })
+      @@include('html/item_4.html',{
+        "pay": "Donate",
+        "privatbank": "Privatbank",
+        "crypto": "Crypto",
+        "copy": "Copy",
+        "message": "Account copied",
+      })
+      @@include('html/item_5.html',{
+        "activity": "Our activity",
+        "report": "Report",
+      })
+    </main>
+    @@include('html/footer.html',{
+      "email": "Email",
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "social": "Help the collection by spreading<br>information on social networks",
+    })
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

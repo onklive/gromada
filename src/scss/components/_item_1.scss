@@ -1,0 +1,77 @@
+.item1 { 
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(50% - 8px);
+  height: 450px;
+  background-color: var(--color-black);
+  @media (max-width: (500px)) {
+    height: fit-content;
+  }
+  h1 {
+    font-size: 56px;
+    line-height: 1;
+    font-weight: 900;
+    color: var(--color-white);
+    margin: 24px 24px 0 24px;
+    @media (max-width: (500px)) {
+      font-size: 48px;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 24px;
+    color: var(--color-white);
+    max-width: 530px;
+  }
+  a {
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    width: fit-content;
+    margin: 0 0 24px 24px;
+    &:hover {
+      color: var(--color-hover);
+    }
+  }
+}
+
+.popup {
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-black);
+  border-radius: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  &__img {
+    width: 56px;
+    height: 56px;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}

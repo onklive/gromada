@@ -1,0 +1,74 @@
+<div class="item4">
+  <h2>@@pay</h2>
+  <div class="tabs">
+    <ul class="tabs__list">
+      <li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-id="mono">Monobank</button></li>
+      <li class="tabs__item"><button class="tabs__btn" data-id="privat">@@privatbank</button></li>
+      <li class="tabs__item"><button class="tabs__btn" data-id="paypal">PayPal</button></li>
+      <li class="tabs__item"><button class="tabs__btn" data-id="crypto">@@crypto</button></li>
+    </ul>
+    <div class="tabs__content tabs__content--active" id="mono">
+        <div class="bank">
+          <div class="bank__title">Monobank</div>
+          <div class="bank__currency">UAH</div>
+        </div>
+        <div class="details">
+          <div class="details__message">@@message</div>
+          <div class="details__account">5375 4114 1746 7367</div>
+          <a class="details__copy" data-account="5375 4114 1746 7367"  title="Copy">@@copy</a>
+        </div>
+      <a href="https://send.monobank.ua/jar/3qeVUWdvfk" class="pay_btn pay_mono">
+        <svg>
+          <use xlink:href="img/img.svg#mono"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="tabs__content" id="privat">
+        <div class="bank">
+          <div class="bank__title">@@privatbank</div>
+          <div class="bank__currency">UAH</div>
+        </div>
+        <div class="details">
+          <div class="details__message">@@message</div>
+          <div class="details__account">5168 7554 5148 3859</div>
+          <a class="details__copy" data-account="5168 7554 5148 3859" title="Copy">@@copy</a>
+        </div>
+      <a href="https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%225168755451483859%22%2C%22amt%22%3A%22100%22%2C%22ccy%22%3A%22UAH%22%7D" class="pay_btn pay_privat">
+        <svg>
+          <use xlink:href="img/img.svg#privatbank"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="tabs__content" id="paypal">
+        <div class="bank">
+          <div class="bank__title">PayPal</div>
+          <div class="bank__currency">USD</div>
+        </div>
+        <div class="details">
+          <div class="details__message">@@message</div>
+          <div class="details__account">donatetokharkiv@gmail.com</div>
+          <a class="details__copy" data-account="donatetokharkiv@gmail.com" title="Copy">@@copy</a>
+        </div>
+      <a href="#" class="pay_btn pay_pal">
+        <svg>
+          <use xlink:href="img/img.svg#paypal"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="tabs__content" id="crypto">
+        <div class="bank">
+          <div class="bank__title">Доступно 46 криптовалют</div>
+        </div>
+        <div class="details">
+          <div class="details__account">
+            <img src="/src/img/crypto.svg" alt="">
+          </div>
+        </div>
+      <a href="#" class="pay_btn pay_crypto">
+        <svg>
+          <use xlink:href="img/img.svg#cryptocurrency"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div> 
