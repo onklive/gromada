@@ -2,3 +2,7 @@ node_modules
 source
 gulp
 .DS_Store
+gulpfile.js
+src
+package-lock.json
+package.json
