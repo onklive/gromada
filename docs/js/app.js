@@ -57,7 +57,13 @@ const lightbox = GLightbox({ });
 tabs.addEventListener("click", e => {
 	if (e.target.closest('.details__copy')) { 
 		const text = e.target.dataset.account;
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(text)
+		.then(() => {
+			console.log('Ok')
+		})
+		.catch(() => {
+			console.log('No')
+		});
 
 		const details = e.target.closest('.details');
 		const account = details.querySelector('.details__account');
